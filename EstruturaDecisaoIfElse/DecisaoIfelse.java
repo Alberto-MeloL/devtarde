@@ -17,11 +17,11 @@ public class DecisaoIfelse {
         // se precoproduto>=200 entao desconto =10
         if (precoProduto >= 200 && precoProduto < 300) {
             desconto = 10;
-        }
+        } 
         // se precoproduto>=300 entao desconto 15
         if (precoProduto >= 300) {
             desconto = 15;
-        }
+        } 
         // realizar a Conta
         double valorDesconto = precoProduto * desconto / 100;
         double precoFinal = precoProduto - valorDesconto;
@@ -31,11 +31,14 @@ public class DecisaoIfelse {
 
     // If encadeado
     public void DecisaoIfelse() {
-        System.out.println("Informe Preco do Produto");
+        System.out.println("Informe Preco do Produto ");
         double precoProduto = sc.nextDouble();
         double desconto;
         // Estrutura de decisao encadeada If-else
-        if (precoProduto >= 200) { //1° condicao
+        if (precoProduto >= 300) {//3° condicao
+            desconto = 15;
+        } else if
+         (precoProduto >= 200) { //1° condicao
             desconto = 10;
 
         } else if (precoProduto >= 100) { //2° condicao
@@ -43,6 +46,9 @@ public class DecisaoIfelse {
         } else {
             desconto = 0;
         }
+    {
+        } 
+
         // realizar a Conta
         double valorDesconto = precoProduto * desconto / 100;
         double precoFinal = precoProduto - valorDesconto;

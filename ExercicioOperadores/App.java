@@ -1,12 +1,12 @@
 package ExercicioOperadores;
 
-{
+
 
  {
-    public class Operadores; 
- }   
+    public class App {
 
-
+    }
+   
 }
 
 
