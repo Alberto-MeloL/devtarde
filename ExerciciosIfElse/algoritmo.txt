@@ -1,0 +1,11 @@
+Exercicios
+1.Ler a primeira variavel
+2.Ler a primeira variavel
+3.Se Valor1>valor2 - entao{
+    Escreva (o Valor1 e maior);
+} senao{
+    Escreva (o valor2 e maior;)
+}
+
+1.Ler o ano que a pessoa nasceu
+2.Verificar se ela pode votar ou nao
