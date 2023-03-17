@@ -8,4 +8,4 @@ Exercicios
 }
 
 1.Ler o ano que a pessoa nasceu
-2.Verificar se ela pode votar ou nao
+2.Verificar se ela pode votar ou nao OK
