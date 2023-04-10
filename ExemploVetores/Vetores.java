@@ -53,35 +53,19 @@ public class Vetores {
 
     public void extra1() {
 
-        System.err.println("Qual voce deseja [A] ou [B]");
-        {
+       int vetorA[]= new int[]{5,10,15,20,25};
+       int vetorB[]= new int[5];
+       vetorA[0] =  vetorB[0];
+       vetorA[1] =  vetorB[1];
+       vetorA[2] =  vetorB[2];
+       vetorA[3] =  vetorB[3];
+       vetorA[4] =  vetorB[4];
+       System.out.println("O valor da primeira posição 0 é:" + vetorA[0] );
+        System.out.println("O valor da primeira posição 1 é:" + vetorA[1]);
+        System.out.println("O valor da primeira posição 2 é:" + vetorA[2]);
+        System.out.println("O valor da primeira posição 3 é:" + vetorA[3]);
+        System.out.println("O valor da primeira posição 4 é:" + vetorA[4]);
 
-        }
-        int vetorInt[] = new int[5];
-        System.out.println("Preencha o vetor A contendo 5 posicoes");
-        vetorInt[0] = sc.nextInt();
-        vetorInt[1] = sc.nextInt();
-        vetorInt[2] = sc.nextInt();
-        vetorInt[3] = sc.nextInt();
-        vetorInt[4] = sc.nextInt();
-        System.out.println("O valor da primeira posição 0 é:" + vetorInt[0]);
-        System.out.println("O valor da segunda  posição 1 é:" + vetorInt[1]);
-        System.out.println("O valor da terceira posição 2 é:" + vetorInt[2]);
-        System.out.println("O valor da quarta   posição 3 é:" + vetorInt[3]);
-        System.out.println("O valor da quinta   posição 4 é:" + vetorInt[4]);
-
-        int vetorInt2[] = new int[5];
-        System.out.println("Preencha o vetor B contendo 5 posicoes");
-        vetorInt[0] = sc.nextInt();
-        vetorInt[1] = sc.nextInt();
-        vetorInt[2] = sc.nextInt();
-        vetorInt[3] = sc.nextInt();
-        vetorInt[4] = sc.nextInt();
-        System.out.println("O valor da primeira posição 0 é:" + vetorInt[0]);
-        System.out.println("O valor da segunda  posição 1 é:" + vetorInt[1]);
-        System.out.println("O valor da terceira posição 2 é:" + vetorInt[2]);
-        System.out.println("O valor da quarta   posição 3 é:" + vetorInt[3]);
-        System.out.println("O valor da quinta   posição 4 é:" + vetorInt[4]);
 
     }
 
