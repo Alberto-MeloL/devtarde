@@ -32,31 +32,38 @@ public class SwitchCase {
     }
 
     public void mes() {
-        case 1: Janeiro = "Domingo";
-        break;
-        case 2: Fevereiro = "Segunda-feira";
-        break;
-case 3: Março = "Terça-feira";
-break;
-case 4:  Abril = "Quarta-feira";
-break;
-case 5: Maio = "Quinta-feira";
-break;
-case 6: Junho = "Sexta-feira";
-break;
-case 7: Julho = "Sábado";
-break;
-case 8: Julho = "Sábado";
-break;
-case 9: Julho = "Sábado";
-break;
-case 10: Julho = "Sábado";
-break;
-case 11: Julho = "Sábado";
-break;
-case 12: Julho = "Sábado";
-break;
+       String letra = sc.nextLine();
+        switch (letra);{
+            case 1: Janeiro = "Domingo";
+            break;
+           case 2: Fevereiro = "Segunda-feira";
+            break;
+           case 3: Março = "Terça-feira";
+           break;
+           case 4:  Abril = "Quarta-feira";
+           break;
+           case 5: Maio = "Quinta-feira";
+           break;
+           case 6: Junho = "Sexta-feira";
+           break;
+           case 7:Julho = "Sábado";
+           break;
+           case 8: Julho = "Sábado";
+           break;
+           case 9: Julho = "Sábado";
+           break;
+           case 10: Julho = "Sábado";
+           break;
+           case 11: Julho = "Sábado";
+           break;
+           case 12: Julho = "Sábado";
+           break;
+           
+           default: nomeDoDiaDaSemana = "[Não encontrado!]";
+           System.out.println("O dia da semana é: "+nomeDoDiaDaSemana);
+        }
+       
+    
+        }
 
-efault: nomeDoDiaDaSemana = "[Não encontrado!]";
-}System.out.println("O dia da semana é: "+nomeDoDiaDaSemana);
-}}
+}
