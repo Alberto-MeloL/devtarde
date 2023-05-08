@@ -1,4 +1,4 @@
-package interacaoFor;
+package ExemploFor;
 
 public class ExercicioFor {
     Scanner sc = new Scanner(System.in);
