@@ -38,14 +38,18 @@ public class AtividadePOO {
     public void att2() {
         int contador = 0;
         int nSorteado = rd.nextInt(1000) + 1;
+       System.out.println("Digite o nº");
         int nDig = 0;
         while (nSorteado != nDig) {
             if (nDig == nSorteado) {
                 System.out.println("Acertou.");
-            } else if (nDig < nSorteado) {
-                System.out.println("O nº digitado e menor que o numero sortedo");
+                System.out.println("em "+contador+" tentativas");
             } else if (nDig > nSorteado) {
+                System.out.println("O nº digitado e menor que o numero sortedo");
+                System.out.println("em "+contador+" tentativas");
+            } else  {
                 System.out.println("O nº digitado e menor que o numero sorteado");
+                System.out.println("em "+contador+" tentativas");
             }
             contador++;
         }
@@ -100,4 +104,6 @@ public class AtividadePOO {
         }
         System.out.println("Quantidade de números ímpares nas posições pares: " + imparesPares);
     }
+    ////////////////////////////////////////////////////////////////////////C-O-R-R-E-Ç-Ã-O/////////////////////////////////////////////////////////////////////////////////////
+
 }
