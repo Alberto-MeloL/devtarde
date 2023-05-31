@@ -1,10 +1,8 @@
 package AtividadeArray;
 
 public class App {
-    public static void main(String[] args) {
-      Pessoa
-            
+  public static void main(String[] args) {
+Pessoa obj = new Pessoa();
 
-       
-    }
+  }
 }

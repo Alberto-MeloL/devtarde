@@ -30,10 +30,11 @@ public class SwitchCase {
                 break;
         }
     }
+}
 
-    public void mes() {
+    /*public void mes() {
        String letra = sc.nextLine();
-        switch (letra);{
+        /*switch (letra);{
             case 1: Janeiro = "Domingo";
             break;
            case 2: Fevereiro = "Segunda-feira";
@@ -66,4 +67,4 @@ public class SwitchCase {
     
         }
 
-}
+}*/
