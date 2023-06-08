@@ -75,7 +75,7 @@ public class Acao {
                 this.sConta = sConta;
         }
 
-        public void entrar() {
+        public void inicio() {
                 vSaldo = 0;
                 fSaque = 0;
                 fEmprestimo = 0;
@@ -83,7 +83,7 @@ public class Acao {
         }
 
         //Criar conta
-        public void criar(int cContaPF) { //tentar fazer com if/else
+        public void criarPF(int cContaPF) { //tentar fazer com if/else
                 Random geradorNconta = new Random();
             if(cContaPF == CPF){
                 System.out.println("Conta criada.");
@@ -92,7 +92,7 @@ public class Acao {
             }
                     
         }
-        public void criarr(int cContaPJ) {
+        public void criarPJ(int cContaPJ) {
                 if (cContaPJ == CNPJ) {
                  System.out.println("Conta criada.");       
                 }else{
