@@ -1,4 +1,4 @@
-package InteracaoFor;
+/*package InteracaoFor;
 
 import java.util.Scanner;
 
@@ -136,3 +136,4 @@ public class ExemploFor {
         }
     }
 }
+*/

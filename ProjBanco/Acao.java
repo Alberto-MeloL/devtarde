@@ -1,11 +1,13 @@
 package ProjBanco;
 
+import java.util.Random;
+
 public class Acao {
 
         int cContaPJ;
         int cContaPF;
-        int pessPJ;
-        int pessPF;
+        int CNPJ;
+        int CPF;
         int vSaldo;
         int fSaque;
         int fEmprestimo;
@@ -17,20 +19,20 @@ public class Acao {
                 this.cContaPF = cContaPF;
         }
 
-        public int getPessPJ() {
-                return pessPJ;
+        public int getCNPJ() {
+                return CNPJ;
         }
 
-        public void setPessPJ(int pessPJ) {
-                this.pessPJ = pessPJ;
+        public void setCNPJ(int CNPJ) {
+                this.CNPJ = CNPJ;
         }
 
-        public int getPessPF() {
-                return pessPF;
+        public int getCPF() {
+                return CPF;
         }
 
-        public void setPessPF(int pessPF) {
-                this.pessPF = pessPF;
+        public void setCPF(int CPF) {
+                this.CPF = CPF;
         }
 
         public int getvSaldo() {
@@ -81,7 +83,24 @@ public class Acao {
         }
 
         //Criar conta
-        public void criar(int p) {
+        public void criar(int cContaPF) { //tentar fazer com if/else
+                Random geradorNconta = new Random();
+            if(cContaPF == CPF){
+                System.out.println("Conta criada.");
+            }else{
+                System.out.println("Erro ao criar a conta.");
+            }
+                    
+        }
+        public void criarr(int cContaPJ) {
+                if (cContaPJ == CNPJ) {
+                 System.out.println("Conta criada.");       
+                }else{
+                        System.out.println("Erro ao criar a conta.");
+                }
+        }
+        //Buscar conta
+        public void buscar() {
                 
         }
 }

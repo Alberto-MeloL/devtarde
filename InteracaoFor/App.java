@@ -1,4 +1,4 @@
-package InteracaoFor;
+/*package InteracaoFor;
 
 public class App {
     public static void main(String[] args) {
@@ -12,3 +12,4 @@ public class App {
         obj.Palavra();
     }
 }
+*/

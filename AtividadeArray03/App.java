@@ -1,4 +1,4 @@
-package AtividadeArray03;
+/*package AtividadeArray03;
 
 public class App {
   //construir o elevador
@@ -42,5 +42,5 @@ public class App {
    }
 }
 }
-
+*/
 

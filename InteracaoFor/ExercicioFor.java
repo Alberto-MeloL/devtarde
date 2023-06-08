@@ -1,4 +1,4 @@
-package ExemploFor;
+/*package ExemploFor;
 
 public class ExercicioFor {
     Scanner sc = new Scanner(System.in);
@@ -23,4 +23,4 @@ public class ExercicioFor {
         System.out.println(consoantes);
     }
 }
-
+*/

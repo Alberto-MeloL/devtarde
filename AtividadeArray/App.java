@@ -1,4 +1,4 @@
-package AtividadeArray;
+/*package AtividadeArray;
 import javax.swing.JOptionPane;
 public class App {
   public static void main(String[] args) {
@@ -9,5 +9,5 @@ pessoa1.idade();
 JOptionPane.showMessageDialog(null,"Idade: "+pessoa1.idade());
     }
   }
-
+*/
 
