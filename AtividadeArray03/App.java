@@ -6,11 +6,11 @@ public class App {
    Elevador elevador1 = new Elevador(10, 10);
    elevador1.iniciar();
    boolean ligado = true;
-   int acao = 0;
+   int acao = 0; //44
    while (ligado) {
-       JOptionPane.showMessageDialog(null,
+       System.out.println(
                "1-Entrar\n 2-Sair\n 3-Subir\n 4-Descer\n 5-Desligar");
-       acao = Integer.parseInt(JOptionPane.showInputDialog("Informe a Ação"));
+       acao = System.out.println("");
        switch (acao) {
            case 1:
                elevador1.entrar(
