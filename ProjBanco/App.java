@@ -9,17 +9,17 @@ public class App {
    while (online) {
        System.out.println(
                "1-Entrar\n 2-Sair\n 3-Buscar\n 4-Saque\n 5-Emprestimo");
-       acao = System.out.println("");
+       acao = "";
        switch (acao) {
            case 1:
                acao1.entrar(
-               Integer.parseInt(JOptionPane.showInputDialog(
-               "Informe Quantas Pessoas")));
+                System.out.println("Informe o número da sua conta.")
+               );
                break;
            case 2:
            acao1.sair(
-               Integer.parseInt(JOptionPane.showInputDialog(
-               "Informe Quantas Pessoas")));
+            System.out.println("Para sair press CTRL + C")
+               );
                break;
            case 3:
                acao1.subir(
