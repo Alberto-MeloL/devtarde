@@ -1,6 +1,7 @@
 package ProjBanco;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class Acao {
 
@@ -84,23 +85,27 @@ public class Acao {
 
         //Criar conta
         public void criarPF(int cContaPF) { //tentar fazer com if/else
-                Random geradorNconta = new Random();
+                Random random = new Random();
+int nConta = random.nextInt(11);
+Scanner ler = new Scanner(System.in);
             if(cContaPF == CPF){
-                System.out.println("Conta criada.");
+                System.out.println("Conta criada, o número da sua conta é "+nConta);
             }else{
                 System.out.println("Erro ao criar a conta.");
             }
                     
         }
         public void criarPJ(int cContaPJ) {
+                Random random = new Random();
+int nConta = random.nextInt(11);
                 if (cContaPJ == CNPJ) {
-                 System.out.println("Conta criada.");       
+                 System.out.println("Conta criada, o número da sua conta é "+nConta);       
                 }else{
                         System.out.println("Erro ao criar a conta.");
                 }
         }
         //Buscar conta
-        public void buscar() {
-                
+        public void buscar(int cContaPF , int contaPJ) {
+             System.out.println("Digite o número da sua conta, para buscá-la.");   
         }
 }

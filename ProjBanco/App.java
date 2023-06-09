@@ -9,16 +9,16 @@ public class App {
    while (online) {
        System.out.println(
                "1-Entrar\n 2-Sair\n 3-Buscar\n 4-Saque\n 5-Emprestimo");
-       acao = "";
+       acao = 0;
        switch (acao) {
            case 1:
-               acao1.entrar(
-                System.out.println("Informe o número da sua conta.")
+               acao1.criarPF(
+                System.out.println("Cries sua conta.(1) para contaPF e (2) para contaPJ).")
                );
                break;
            case 2:
-           acao1.sair(
-            System.out.println("Para sair press CTRL + C")
+           acao1.entrar(
+            System.out.println("Informe o número da sua conta.")
                );
                break;
            case 3:
