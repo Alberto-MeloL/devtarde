@@ -2,6 +2,7 @@ package ProjectBanc;
 
 import java.util.List;
 import java.util.Scanner;
+import java.nio.file.OpenOption;
 import java.util.ArrayList;
 
 public class Online {
@@ -42,6 +43,16 @@ public class Online {
 
     // Criar conta
     public void criar(ContaPF ContaPF) {
+switch (opcao) {
+    case 1:
+        System.out.println("Criar conta(PF)");
+        break;
+        case 2:
+        System.out.println("Criar conta(PJ)");
+        break;
 
+    default:
+        break;
+}
     }
 }
