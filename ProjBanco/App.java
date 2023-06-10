@@ -16,9 +16,8 @@ public class App extends Acao {
 
         while (online) {
             System.out.println(
-                    "====================\n1-CriarPF\n 2-CriarPJ\n 3-Depósito\n 4-Saque\n 5-Saldo\n 6-Buscar conta\n 7-Buscar por número da conta\n====================\nSua opção: ");
+                    "===============================\n 1-CriarPF\n 2-CriarPJ\n 3-Depósito\n 4-Saque\n 5-Saldo\n 6-Buscar conta\n 7-Buscar por número da conta\n 8-Empréstimo\n ===============================\nSua opção: ");
             // Lógica para receber entrada do usuário e atualizar o valor de 'acao'
-            // Exemplo:
             Scanner ler = new Scanner(System.in);
             acao = ler.nextInt();
             switch (acao) {
@@ -48,6 +47,10 @@ public class App extends Acao {
                     break;
                 case 7:
                     acao1.buscarPorNumero();
+                    System.out.println("\n----------------------------");
+                    break;
+                case 8:
+                    acao1.emprestimo();
                     System.out.println("\n----------------------------");
                     break;
             }

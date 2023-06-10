@@ -11,7 +11,7 @@ public class Acao {
         String CPF;
         double vSaldo;
         String fSaque;
-        String fEmprestimo;
+        double fEmprestimo;
         String fDeposito;
         String nome;
         int nConta;
@@ -19,7 +19,7 @@ public class Acao {
         double valor;
 
         public Acao(int cContaPJ, int cContaPF, String cNPJ, String cPF, double vSaldo, String fSaque,
-                        String fEmprestimo, String fDeposito, String nome, int nConta, int sConta, double valor) {
+                        double fEmprestimo, String fDeposito, String nome, int nConta, int sConta, double valor) {
                 this.cContaPJ = cContaPJ;
                 this.cContaPF = cContaPF;
                 CNPJ = cNPJ;
@@ -86,11 +86,11 @@ public class Acao {
                 this.fSaque = fSaque;
         }
 
-        public String getfEmprestimo() {
+        public double getfEmprestimo() {
                 return fEmprestimo;
         }
 
-        public void setfEmprestimo(String fEmprestimo) {
+        public void setfEmprestimo(double fEmprestimo) {
                 this.fEmprestimo = fEmprestimo;
         }
 
@@ -230,4 +230,23 @@ public class Acao {
                         System.out.println("Conta não localizada, verifica se realmente esse é o número dela.");
                 }
         }
+
+        public void emprestimo() {
+                System.out.println(
+                                "Empréstimo min: R$ 500 max: R$ 5000.\nEmpréstimo de imediato, com juros de 5% ao mês.");
+                Scanner ler = new Scanner(System.in);
+                System.out.println("Quanto você deseja emprestar: ");
+                double vEmprestimo = ler.nextDouble();
+                if (vEmprestimo < 500) {
+                        System.out.println("(Erro)Empréstimo minímo R$ 500,00.");
+                } else if (vEmprestimo > 5000) {
+                        System.out.println("(Erro).Empréstimo máximo R$ 5000,00.");
+                } else {
+                        double novoSaldo = getvSaldo() + vEmprestimo;
+                        setvSaldo(novoSaldo);
+                        System.out.println("O juros será combrado até que efetue o pagamento.");
+                }
+
+        }
+
 }
