@@ -7,6 +7,7 @@ public class App {
    elevador1.iniciar();
    boolean ligado = true;
    int acao = 0; //44
+   
    while (ligado) {
        System.out.println(
                "1-Entrar\n 2-Sair\n 3-Subir\n 4-Descer\n 5-Desligar");

@@ -9,12 +9,15 @@ public class Online {
     String clientes;
     String clientesON;
     String buscarConta;
-
+int opcao = 0;
     // Construtor
     public Online(String clientes, String clientesON, String buscarConta) {
         this.clientes = clientes;
         this.clientesON = clientesON;
         this.buscarConta = buscarConta;
+    }
+
+    public Online(int i, int j, int k) {
     }
 
     public String getClientes() {

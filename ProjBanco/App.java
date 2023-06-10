@@ -1,44 +1,56 @@
 package ProjBanco;
 
-public class App {
+import java.util.Scanner;
+
+public class App extends Acao {
+    public App(int cContaPJ, int cContaPF, String cNPJ, String cPF, String vSaldo, String fSaque, String fEmprestimo,
+            String fDeposito, String nome, int sConta) {
+        super(cContaPJ, cContaPF, cNPJ, cPF, vSaldo, fSaque, fEmprestimo, fDeposito, nome, sConta);
+        // TODO Auto-generated constructor stub
+    }
+
     public static void main(String[] args) {
-     Acao acao1 = new Acao(0, 0); 
-     acao1.inicio();
-   boolean online = true;
-   int acao = 0; //44
-   while (online) {
-       System.out.println(
-               "1-Entrar\n 2-Sair\n 3-Buscar\n 4-Saque\n 5-Emprestimo");
-       acao = 0;
-       switch (acao) {
-           case 1:
-               acao1.criarPF(
-                System.out.println("Cries sua conta.(1) para contaPF e (2) para contaPJ).")
-               );
-               break;
-           case 2:
-           acao1.entrar(
-            System.out.println("Informe o número da sua conta.")
-               );
-               break;
-           case 3:
-               acao1.subir(
-               Integer.parseInt(JOptionPane.showInputDialog(
-               "Informe Quantos Andares")));
-               break;
-           case 4:
-               acao1.descer(
-               Integer.parseInt(JOptionPane.showInputDialog(
-               "Informe Quantos Andares")));
-               break;
-           case 5:
-               online = false;
-           default:
-               System.out.println("Informe uma ação existente");
-               break;
-       }
-   }
-}
-}
-}
+        Acao acao1 = new Acao(0, 0, null, null, null, null, null, null, null, 0);
+        boolean online = true;
+        int acao = 0;
+
+        while (online) {
+            System.out.println(
+                    "====================\n1-CriarPF\n 2-CriarPJ\n 3-Depósito\n 4-Saque\n 5-Saldo\n 6-Buscar conta\n 7-Buscar por número da conta\n====================\nSua opção: ");
+            // Lógica para receber entrada do usuário e atualizar o valor de 'acao'
+            // Exemplo:
+            Scanner ler = new Scanner(System.in);
+            acao = ler.nextInt();
+            switch (acao) {
+                case 1:
+                    acao1.criarPF();
+                    System.out.println("\n----------------------------");
+                    break;
+                case 2:
+                    acao1.criarPJ();
+                    System.out.println("----------------------------");
+                    break;
+                case 3:
+                    acao1.depositar();
+                    System.out.println("\n----------------------------");
+                    break;
+                case 4:
+                    acao1.sacar();
+                    System.out.println("\n----------------------------");
+                    break;
+                case 5:
+                    acao1.saldo();
+                    System.out.println("\n----------------------------");
+                    break;
+                case 6:
+                    acao1.buscarConta();
+                    System.out.println("\n----------------------------");
+                    break;
+                case 7:
+                    acao1.buscarPorNumero();
+                    System.out.println("\n----------------------------");
+                    break;
+            }
+        }
+    }
 }
