@@ -15,45 +15,56 @@ public class App extends Acao {
         int acao = 0;
 
         while (online) {
-            System.out.println(
-                    "===============================\n 1-CriarPF\n 2-CriarPJ\n 3-Depósito\n 4-Saque\n 5-Saldo\n 6-Buscar conta\n 7-Buscar por número da conta\n 8-Empréstimo\n ===============================\nSua opção: ");
+            System.out.println("+===============================+");
+            System.out.println(" 1- Criar PF");
+            System.out.println(" 2- Criar PJ");
+            System.out.println(" 3- Depósito");
+            System.out.println(" 4- Saque");
+            System.out.println(" 5- Saldo");
+            System.out.println(" 6- Informações da conta");
+            System.out.println(" 7- Buscar por número da conta");
+            System.out.println(" 8- Empréstimo");
+            System.out.println("+===============================+");
             // Lógica para receber entrada do usuário e atualizar o valor de 'acao'
             Scanner ler = new Scanner(System.in);
             acao = ler.nextInt();
             switch (acao) {
                 case 1:
                     acao1.criarPF();
-                    System.out.println("\n----------------------------|");
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 2:
                     acao1.criarPJ();
-                    System.out.println("----------------------------|");
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
+            }
+            switch (acao) {
                 case 3:
                     acao1.depositar();
-                    System.out.println("\n----------------------------|");
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 4:
                     acao1.sacar();
-                    System.out.println("\n----------------------------|");
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 5:
                     acao1.saldo();
-                    System.out.println("\n----------------------------|");
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 6:
                     acao1.buscarConta();
-                    System.out.println("\n----------------------------|");
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 7:
                     acao1.buscarPorNumero();
-                    System.out.println("\n----------------------------|");
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 8:
                     acao1.emprestimo();
-                    System.out.println("\n----------------------------|");
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
             }
+
         }
     }
 }

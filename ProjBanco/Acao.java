@@ -138,12 +138,12 @@ public class Acao {
                 Scanner ler = new Scanner(System.in);
                 Random nConta = new Random();
 
-                System.out.println("xxx.xxx.xxx-xx");
                 System.out.println("Informe seu nome: ");
                 String nome = ler.nextLine();
                 setNome(nome);
 
                 System.out.println("Digite seu CPF: ");
+                System.out.println("Ex: xxx.xxx.xxx-xx");
                 String CPF = ler.nextLine();
                 setCPF(CPF);
 
@@ -162,12 +162,12 @@ public class Acao {
                 Scanner ler = new Scanner(System.in);
                 Random nConta = new Random();
 
-                System.out.println("Ex: XX. XXX. XXX/0001-XX");
                 System.out.println("Informe seu nome: ");
                 String nome = ler.nextLine();
                 setNome(nome);
 
                 System.out.println("Digite seu CNPJ: ");
+                System.out.println("Ex: XX. XXX. XXX/0001-XX");
                 String CNPJ = ler.nextLine();
                 setCNPJ(CNPJ);
 
@@ -209,7 +209,7 @@ public class Acao {
         }
 
         public void saldo() {
-                System.out.println(vSaldo);
+                System.out.println("Seu saldo é de: "+vSaldo);
         }
 
         public void buscarConta() {
@@ -250,10 +250,17 @@ public class Acao {
                 }
 
         }
-        public void sairConta(){
-                Scanner ler = new Scanner(System.in);
-                System.out.println("Para sair de sua conta digeite (SAIR). ");
-                 String exit = ler.next();
-        }
+
+        /*
+         * public void sairConta() {
+         * String exit;
+         * Scanner ler = new Scanner(System.in);
+         * System.out.println("Para sair de sua conta digeite (SAIR). " + exit);
+         * exit = ler.next();
+         * if(exit != ){
+         * 
+         * }
+         * }
+         */
 
 }
