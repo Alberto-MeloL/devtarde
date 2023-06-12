@@ -13,6 +13,7 @@ public class App extends Acao {
         Acao acao1 = new Acao(0, 0, null, null, null, null, null, null, null, 0);
         boolean online = true;
         int acao = 0;
+        int acessarConta = 0;
 
         while (online) {
             System.out.println("+===============================+");
@@ -38,7 +39,7 @@ public class App extends Acao {
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
             }
-            switch (acao) {
+            switch (acessarConta) {
                 case 3:
                     acao1.depositar();
                     System.out.println("\n+==========Banco Senai==========+");
