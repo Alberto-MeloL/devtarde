@@ -15,15 +15,15 @@ public class Acao {
         String fDeposito;
         String nome;
         int nConta;
-        int sConta;
+        String sConta;
         double valor;
 
         public Acao(int cContaPJ, int cContaPF, String cNPJ, String cPF, double vSaldo, String fSaque,
-                        double fEmprestimo, String fDeposito, String nome, int nConta, int sConta, double valor) {
+                        double fEmprestimo, String fDeposito, String nome, int nConta, String sConta, double valor) {
                 this.cContaPJ = cContaPJ;
                 this.cContaPF = cContaPF;
-                CNPJ = cNPJ;
-                CPF = cPF;
+                this.CNPJ = CNPJ;
+                this.CPF = CPF;
                 this.vSaldo = vSaldo;
                 this.fSaque = fSaque;
                 this.fEmprestimo = fEmprestimo;
@@ -118,11 +118,11 @@ public class Acao {
                 this.nConta = nConta;
         }
 
-        public int getsConta() {
+        public String getsConta() {
                 return sConta;
         }
 
-        public void setsConta(int sConta) {
+        public void setsConta(String sConta) {
                 this.sConta = sConta;
         }
 
@@ -209,7 +209,7 @@ public class Acao {
         }
 
         public void saldo() {
-                System.out.println("Seu saldo é de: "+vSaldo);
+                System.out.println("Seu saldo é de: " + vSaldo);
         }
 
         public void buscarConta() {
@@ -250,17 +250,5 @@ public class Acao {
                 }
 
         }
-
-        /*
-         * public void sairConta() {
-         * String exit;
-         * Scanner ler = new Scanner(System.in);
-         * System.out.println("Para sair de sua conta digeite (SAIR). " + exit);
-         * exit = ler.next();
-         * if(exit != ){
-         * 
-         * }
-         * }
-         */
 
 }
