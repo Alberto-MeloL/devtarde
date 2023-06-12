@@ -23,35 +23,35 @@ public class App extends Acao {
             switch (acao) {
                 case 1:
                     acao1.criarPF();
-                    System.out.println("\n----------------------------");
+                    System.out.println("\n----------------------------|");
                     break;
                 case 2:
                     acao1.criarPJ();
-                    System.out.println("----------------------------");
+                    System.out.println("----------------------------|");
                     break;
                 case 3:
                     acao1.depositar();
-                    System.out.println("\n----------------------------");
+                    System.out.println("\n----------------------------|");
                     break;
                 case 4:
                     acao1.sacar();
-                    System.out.println("\n----------------------------");
+                    System.out.println("\n----------------------------|");
                     break;
                 case 5:
                     acao1.saldo();
-                    System.out.println("\n----------------------------");
+                    System.out.println("\n----------------------------|");
                     break;
                 case 6:
                     acao1.buscarConta();
-                    System.out.println("\n----------------------------");
+                    System.out.println("\n----------------------------|");
                     break;
                 case 7:
                     acao1.buscarPorNumero();
-                    System.out.println("\n----------------------------");
+                    System.out.println("\n----------------------------|");
                     break;
                 case 8:
                     acao1.emprestimo();
-                    System.out.println("\n----------------------------");
+                    System.out.println("\n----------------------------|");
                     break;
             }
         }
