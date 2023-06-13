@@ -54,7 +54,7 @@ public class App extends Acao {
                     break;
                 case 6:
                     acao1.buscarConta();
-                    System.out.println("\n+==========Banco Senai==========+");2
+                    System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 7:
                     acao1.buscarPorNumero();
@@ -67,6 +67,7 @@ public class App extends Acao {
                 case 9:
                     online = false;
                     System.out.println("Você saiu da sua conta.");
+                    break;
                     // acessar conta com numero e cpf/cnpj
             }
 
