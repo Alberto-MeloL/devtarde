@@ -24,11 +24,11 @@ public class App extends Acao {
             System.out.println(" 7- Informações da conta");
             System.out.println(" 8- Buscar por número da conta");
             System.out.println(" 9- Empréstimo");
-            System.out.println(" 10- Criar PJ");
-            System.out.println(" 11- Acessar PF");
+            System.out.println(" 10- Criar PF");
+            System.out.println(" 11- Acessar PJ");
             System.out.println(" 12- Sair ");
             System.out.println("+===============================+");
-            // Lógica para receber entrada do usuário e atualizar o valor de 'acao'
+
             Scanner ler = new Scanner(System.in);
             acao = ler.nextInt();
             switch (acao) {
@@ -40,7 +40,7 @@ public class App extends Acao {
                     acao1.criarPJ();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-               case 3:
+                case 3:
                     acao1.acessarPF();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
@@ -73,11 +73,11 @@ public class App extends Acao {
                     acao1.acessarPF();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-               
-                case 12:
+                case 11:
                     online = false;
                     System.out.println("Você saiu da sua conta.");
                     break;
+                    default: System.out.println("Informação inválida.");
             }
 
         }
