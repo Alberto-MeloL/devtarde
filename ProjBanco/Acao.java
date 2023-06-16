@@ -145,6 +145,23 @@ public class Acao {
                 this.senha = senha;
         }
 
+        public void acesso() {
+                String[] nome = { "nome1" }; // Vetor com os nomes de usuário
+                String[] senha = { "senha" }; // Vetor com as senhas correspondentes
+                Scanner ler = new Scanner(System.in);
+                System.out.println("Digite seu nome: ");
+                String nomeDig = ler.next();
+                System.out.println("Digite sua senha: ");
+                int senhaDig = ler.nextInt();
+
+                if (nomeDig.equals(getNome()) && senhaDig == getSenha()) {
+                        System.out.println("Acesso aprovado.");
+                } else {
+                        System.out.println("Usuário ou senha inválidos.");
+                }
+
+        }
+
         public void criarPF() {
                 Scanner ler = new Scanner(System.in);
                 Random nConta = new Random();
@@ -160,6 +177,7 @@ public class Acao {
 
                 System.out.print("Escolha uma senha: ");
                 int senhaa = ler.nextInt();
+                setSenha(senhaa);
 
                 int nContaPF = nConta.nextInt(100000);
                 setnConta(nContaPF);
@@ -187,7 +205,8 @@ public class Acao {
 
                 System.out.print("Escolha uma senha: ");
                 int senhaa = ler.nextInt();
-
+                setSenha(senhaa);
+                setcContaPJ(nome, CNPJ, senhaa);
                 int nContaPJ = nConta.nextInt(100000);
                 setnConta(nContaPJ);
                 if (CNPJ != nome) {
@@ -196,6 +215,9 @@ public class Acao {
                         System.out.println("Erro.");
                 }
 
+        }
+
+        private void setcContaPJ(String nome2, String cNPJ2, int senhaa) {
         }
 
         public void depositar() {
@@ -267,38 +289,53 @@ public class Acao {
                 }
 
         }
+public void acessarPF() {
+          String[] nome = { "nome1" }; // Vetor com os nomes de usuário
+                String[] senha = { "senha" }; // Vetor com as senhas correspondentes
+                Scanner ler = new Scanner(System.in);
+                System.out.println("Digite seu nome: ");
+                String nomeDig = ler.next();
+                System.out.println("Digite sua senha: ");
+                int senhaDig = ler.nextInt();
 
-
-public void LoginSystem() {
-    
-        String[] usernames = { "user1", "user2", "user3" }; // Vetor com os nomes de usuário
-        String[] passwords = { "pass1", "pass2", "pass3" }; // Vetor com as senhas correspondentes
-
-        Scanner ler = new Scanner(System.in);
-
-        System.out.print("Nome de usuário: ");
-        String username = ler.nextLine();
-
-        System.out.print("Senha: ");
-        String password = ler.nextLine();
-
-        boolean isAuthenticated = false;
-
-        for (int i = 0; i < usernames.length; i++) {
-            if (username.equals(usernames[i]) && password.equals(passwords[i])) {
-                isAuthenticated = true;
-                break;
-            }
-        }
-
-        if (isAuthenticated) {
-            System.out.println("Login realizado com sucesso!");
-        } else {
-            System.out.println("Nome de usuário ou senha incorretos. Tente novamente.");
-        }
-
-        ler.close();
-    
+                if (nomeDig.equals(getNome()) && senhaDig == getSenha()) {
+                     
+                } else {
+                        System.out.println("Usuário ou senha inválidos.");
+                }
 }
+        /*public void LoginSystem() {
 
+                String[] usernames = { "nome1" }; // Vetor com os nomes de usuário
+                String[] passwords = { "senha" }; // Vetor com as senhas correspondentes
+
+                Scanner ler = new Scanner(System.in);
+
+                System.out.print("Nome de usuário: ");
+                String username = ler.nextLine();
+                setNome(username);
+
+                System.out.print("Senha: ");
+                String password = ler.nextLine();
+                setSenha(senha);
+
+                boolean isAuthenticated = false;
+
+                for (int i = 0; i < usernames.length; i++) {
+                        if (username.equals(usernames[i]) && password.equals(passwords[i])) {
+                                isAuthenticated = true;
+                                break;
+                        }
+                }
+
+                if (isAuthenticated) {
+                        System.out.println("Login realizado com sucesso!");
+                } else {
+                        System.out.println("Nome de usuário ou senha incorretos. Tente novamente.");
+                }
+
+                ler.close();
+
+        }
+*/
 }

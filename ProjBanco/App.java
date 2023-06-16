@@ -6,19 +6,17 @@ public class App extends Acao {
     public App(int cContaPJ, int cContaPF, String cNPJ, String cPF, String vSaldo, String fSaque, String fEmprestimo,
             String fDeposito, String nome, int sConta) {
         super(cContaPJ, cContaPF, cNPJ, cPF, vSaldo, fSaque, fEmprestimo, fDeposito, nome, sConta);
-        // TODO Auto-generated constructor stub
     }
 
     public static void main(String[] args) {
         Acao acao1 = new Acao(0, 0, null, null, null, null, null, null, null, 0);
         boolean online = true;
         int acao = 0;
-        int acessarConta = 0;
 
         while (online) {
             System.out.println("+===============================+");
             System.out.println(" 1- Criar PF");
-            System.out.println(" 2- Criar PJ");
+            System.out.println(" 2- Acessar PJ");
             System.out.println(" 3- Acessar conta");
             System.out.println(" 4- Depósito");
             System.out.println(" 5- Saque");
@@ -26,7 +24,9 @@ public class App extends Acao {
             System.out.println(" 7- Informações da conta");
             System.out.println(" 8- Buscar por número da conta");
             System.out.println(" 9- Empréstimo");
-            System.out.println(" 10- Sair ");
+            System.out.println(" 10- Criar PJ");
+            System.out.println(" 11- Acessar PF");
+            System.out.println(" 12- Sair ");
             System.out.println("+===============================+");
             // Lógica para receber entrada do usuário e atualizar o valor de 'acao'
             Scanner ler = new Scanner(System.in);
@@ -41,7 +41,7 @@ public class App extends Acao {
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 3:
-                    acao1.LoginSystem();
+                    acao1.acesso();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
 
@@ -70,6 +70,14 @@ public class App extends Acao {
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
                 case 10:
+                    acao1.acessarPF();
+                    System.out.println("\n+==========Banco Senai==========+");
+                    break;
+                case 11:
+                    acao1.acessarPF();
+                    System.out.println("\n+==========Banco Senai==========+");
+                    break;
+                case 12:
                     online = false;
                     System.out.println("Você saiu da sua conta.");
                     break;
