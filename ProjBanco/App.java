@@ -40,8 +40,8 @@ public class App extends Acao {
                     acao1.criarPJ();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-                case 3:
-                    acao1.acesso();
+               case 3:
+                    acao1.acessarPF();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
 
@@ -73,10 +73,7 @@ public class App extends Acao {
                     acao1.acessarPF();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-                case 11:
-                    acao1.acessarPF();
-                    System.out.println("\n+==========Banco Senai==========+");
-                    break;
+               
                 case 12:
                     online = false;
                     System.out.println("Você saiu da sua conta.");

@@ -299,43 +299,10 @@ public void acessarPF() {
                 int senhaDig = ler.nextInt();
 
                 if (nomeDig.equals(getNome()) && senhaDig == getSenha()) {
-                     
+                     System.out.println("a");
                 } else {
                         System.out.println("Usuário ou senha inválidos.");
                 }
 }
-        /*public void LoginSystem() {
 
-                String[] usernames = { "nome1" }; // Vetor com os nomes de usuário
-                String[] passwords = { "senha" }; // Vetor com as senhas correspondentes
-
-                Scanner ler = new Scanner(System.in);
-
-                System.out.print("Nome de usuário: ");
-                String username = ler.nextLine();
-                setNome(username);
-
-                System.out.print("Senha: ");
-                String password = ler.nextLine();
-                setSenha(senha);
-
-                boolean isAuthenticated = false;
-
-                for (int i = 0; i < usernames.length; i++) {
-                        if (username.equals(usernames[i]) && password.equals(passwords[i])) {
-                                isAuthenticated = true;
-                                break;
-                        }
-                }
-
-                if (isAuthenticated) {
-                        System.out.println("Login realizado com sucesso!");
-                } else {
-                        System.out.println("Nome de usuário ou senha incorretos. Tente novamente.");
-                }
-
-                ler.close();
-
-        }
-*/
 }
