@@ -17,9 +17,11 @@ public class Acao {
         int nConta;
         String sConta;
         double valor;
+        int senha;
 
         public Acao(int cContaPJ, int cContaPF, String cNPJ, String cPF, double vSaldo, String fSaque,
-                        double fEmprestimo, String fDeposito, String nome, int nConta, String sConta, double valor) {
+                        double fEmprestimo, String fDeposito, String nome, int nConta, String sConta, double valor,
+                        int senha) {
                 this.cContaPJ = cContaPJ;
                 this.cContaPF = cContaPF;
                 this.CNPJ = CNPJ;
@@ -32,6 +34,7 @@ public class Acao {
                 this.nConta = nConta;
                 this.sConta = sConta;
                 this.valor = valor;
+                this.senha = senha;
         }
 
         public Acao(int i, int j, Object object, Object object2, Object object3, Object object4, Object object5,
@@ -134,6 +137,14 @@ public class Acao {
                 this.valor = valor;
         }
 
+        public int getSenha() {
+                return senha;
+        }
+
+        public void setSenha(int senha) {
+                this.senha = senha;
+        }
+
         public void criarPF() {
                 Scanner ler = new Scanner(System.in);
                 Random nConta = new Random();
@@ -146,6 +157,9 @@ public class Acao {
                 System.out.println("Ex: xxx.xxx.xxx-xx");
                 String CPF = ler.nextLine();
                 setCPF(CPF);
+
+                System.out.print("Escolha uma senha: ");
+                int senhaa = ler.nextInt();
 
                 int nContaPF = nConta.nextInt(100000);
                 setnConta(nContaPF);
@@ -170,6 +184,9 @@ public class Acao {
                 System.out.println("Ex: XX. XXX. XXX/0001-XX");
                 String CNPJ = ler.nextLine();
                 setCNPJ(CNPJ);
+
+                System.out.print("Escolha uma senha: ");
+                int senhaa = ler.nextInt();
 
                 int nContaPJ = nConta.nextInt(100000);
                 setnConta(nContaPJ);
@@ -250,5 +267,38 @@ public class Acao {
                 }
 
         }
+
+
+public void LoginSystem() {
+    
+        String[] usernames = { "user1", "user2", "user3" }; // Vetor com os nomes de usuário
+        String[] passwords = { "pass1", "pass2", "pass3" }; // Vetor com as senhas correspondentes
+
+        Scanner ler = new Scanner(System.in);
+
+        System.out.print("Nome de usuário: ");
+        String username = ler.nextLine();
+
+        System.out.print("Senha: ");
+        String password = ler.nextLine();
+
+        boolean isAuthenticated = false;
+
+        for (int i = 0; i < usernames.length; i++) {
+            if (username.equals(usernames[i]) && password.equals(passwords[i])) {
+                isAuthenticated = true;
+                break;
+            }
+        }
+
+        if (isAuthenticated) {
+            System.out.println("Login realizado com sucesso!");
+        } else {
+            System.out.println("Nome de usuário ou senha incorretos. Tente novamente.");
+        }
+
+        ler.close();
+    
+}
 
 }

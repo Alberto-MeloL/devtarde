@@ -19,13 +19,14 @@ public class App extends Acao {
             System.out.println("+===============================+");
             System.out.println(" 1- Criar PF");
             System.out.println(" 2- Criar PJ");
-            System.out.println(" 3- Depósito");
-            System.out.println(" 4- Saque");
-            System.out.println(" 5- Saldo");
-            System.out.println(" 6- Informações da conta");
-            System.out.println(" 7- Buscar por número da conta");
-            System.out.println(" 8- Empréstimo");
-            System.out.println(" 9- Sair ");
+            System.out.println(" 3- Acessar conta");
+            System.out.println(" 4- Depósito");
+            System.out.println(" 5- Saque");
+            System.out.println(" 6- Saldo");
+            System.out.println(" 7- Informações da conta");
+            System.out.println(" 8- Buscar por número da conta");
+            System.out.println(" 9- Empréstimo");
+            System.out.println(" 10- Sair ");
             System.out.println("+===============================+");
             // Lógica para receber entrada do usuário e atualizar o valor de 'acao'
             Scanner ler = new Scanner(System.in);
@@ -39,36 +40,39 @@ public class App extends Acao {
                     acao1.criarPJ();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-
                 case 3:
+                    acao1.LoginSystem();
+                    System.out.println("\n+==========Banco Senai==========+");
+                    break;
+
+                case 4:
                     acao1.depositar();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-                case 4:
+                case 5:
                     acao1.sacar();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-                case 5:
+                case 6:
                     acao1.saldo();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-                case 6:
+                case 7:
                     acao1.buscarConta();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-                case 7:
+                case 8:
                     acao1.buscarPorNumero();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-                case 8:
+                case 9:
                     acao1.emprestimo();
                     System.out.println("\n+==========Banco Senai==========+");
                     break;
-                case 9:
+                case 10:
                     online = false;
                     System.out.println("Você saiu da sua conta.");
                     break;
-                    // acessar conta com numero e cpf/cnpj
             }
 
         }
