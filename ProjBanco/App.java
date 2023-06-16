@@ -3,13 +3,16 @@ package ProjBanco;
 import java.util.Scanner;
 
 public class App extends Acao {
-    public App(int cContaPJ, int cContaPF, String cNPJ, String cPF, String vSaldo, String fSaque, String fEmprestimo,
-            String fDeposito, String nome, int sConta) {
-        super(cContaPJ, cContaPF, cNPJ, cPF, vSaldo, fSaque, fEmprestimo, fDeposito, nome, sConta);
+  
+
+    public App(int cContaPJ, int cContaPF, String cNPJ, String cPF, double vSaldo, String fSaque, double fEmprestimo,
+            String fDeposito, String nome, int nConta, String sConta, double valor, int senha) {
+        super(cContaPJ, cContaPF, cNPJ, cPF, vSaldo, fSaque, fEmprestimo, fDeposito, nome, nConta, sConta, valor, senha);
+        //TODO Auto-generated constructor stub
     }
 
     public static void main(String[] args) {
-        Acao acao1 = new Acao(0, 0, null, null, null, null, null, null, null, 0);
+        Acao acao1 = new Acao(0, 0, null, null, 0, null, 0, null, null, 0, null, 0, 0);;
         boolean online = true;
         int acao = 0;
 
