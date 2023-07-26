@@ -12,7 +12,7 @@ public class App extends Acao {
     }
 
     public static void main(String[] args) {
-        Acao acao1 = new Acao(0, 0, null, null, 0, null, 0, null, null, 0, null, 0, 0);;
+        Acao acao1 = new Acao(0, 0, null, null, 0, null, 0, null, null, 0, null, 0, 0);
         boolean online = true;
         int acao = 0;
 
